@@ -1,0 +1,8 @@
+#box {
+    background-color: blue;
+    border-style: solid;
+    border-width: 10px;
+    border-color: green;
+    margin: auto;
+    /* easiest way to center something, doesn't always work though */
+}
