@@ -1,0 +1,31 @@
+h1 {  
+    text-align: center;
+    font-family: 'Bebas Neue';
+}
+
+body {
+    background-color: white;
+
+}
+
+.flex-buttons {
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+}
+
+#first-button,
+#second-button {
+    background-color: #5e3216;
+    color: #ab6538;
+    margin: 20px;
+    padding: 50px;
+    width: 200px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 12px;
+    font-family: 'Bebas Neue';
+}

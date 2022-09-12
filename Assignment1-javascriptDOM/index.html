@@ -1,24 +1,37 @@
 <!DOCTYPE html>
+<!-- Code by Yuliza Saucedo with references to w3schools.com and class examples 
 
+Assignment 1: Create a web page that uses Javascript to interact with the DOM (document object model) in the following ways:
+
+- Manipulate at least one CSS property through the DOM.
+- Manipulate at least one other DOM property that is not a CSS property.
+- Respond to at least two different types of events using event listeners.
+- Both your Javascript and your CSS should be in external files (not embedded in the HTML).
+-->
 <html lang="en">
+<meta charset="UTF-8"/>
 
 <head>
     <title>
-        hello
+        Assignment 1
     </title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Eczar:wght@600&family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Eczar:wght@600&family=Nunito&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <div id="box">
-        <p>content</p>
+    <h1 id="h1">Javascript and DOM</h1>
+    <div class="flex-buttons">
+       <div class="flex-buttons">
+        <button  id="first-button">Theme One</button>
+       </div>
+       <div class="flex-buttons">
+        <button id="second-button">Theme Two</button>
+       </div>
     </div>
-    <button id="first-button">
-        button!
-    </button>
-    <button id="second-button">
-        button2!
-    </button>
+    <script src="index.js"></script>
 </body>
 
 </html>
