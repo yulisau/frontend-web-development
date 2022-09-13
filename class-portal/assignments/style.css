@@ -1,0 +1,31 @@
+body {
+    background-color: #2c0d8f;
+}
+h1, h2, h3 {
+    color: #fed1ff;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Berkshire Swash';
+}
+
+.flex-sections{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px 5vw;
+    font-family: 'Berkshire Swash';
+}
+
+#section1, #section2, #section3, #section4{
+    background-color: #fed1ff;
+    padding: 10px;
+}
+
+#section1 {
+    margin-top: 20px;
+}
+
+p {
+    color: #2c0d8f;
+    font-size: large;
+}
