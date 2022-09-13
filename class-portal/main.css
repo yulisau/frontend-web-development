@@ -16,25 +16,20 @@ img {
     margin-top: 20%;
 }
 
+.flex-sections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+p {
+    visibility: hidden;
+} 
 
 
-
-@media screen and (min-width: 601px) { /* when the screen is larger than 600px wide, hover effect is active*/
-   
-    .flex-sections {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
-    
-    p {
-        visibility: hidden;
-    } 
-   
-   
-   
+@media screen and (min-width: 501px) { /* when the screen is larger than 600px wide, hover effect is active*/
     /* Text on image hover
 referenced from: https://code-boxx.com/text-over-image-hover-html-css/#sec-text
 */
@@ -115,7 +110,7 @@ referenced from: https://code-boxx.com/text-over-image-hover-html-css/#sec-text
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 
     /*for smaller screens*/
     .flex-sections {
