@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Code by Yuliza Saucedo; references from https://developer.mozilla.org/en-US/-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment 2</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>HTML Forms</h1>
+    </header>
+    <main>
+      <form id="my-form">
+        <!-- text input field -->
+        <div>
+          <label for="name">First Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="2"
+            maxlength="12"
+            size="15"
+          />
+        </div>
+        <!-- text area input-->
+        <div id="text-areawhole">
+          <label for="text-area">Write about your day:</label>
+          <textarea
+            id="text-area"
+            name="text-area"
+            rows="5"
+            cols="33"
+          ></textarea>
+        </div>
+        <!-- color input button -->
+        <div>
+          <label for="color-input">Choose a color</label>
+          <input type="color" id="color-input" />
+        </div>
+        <!-- checkboxes -->
+        <fieldset id="options1">
+          <legend>Choose your favorite drink(s):</legend>
+          <div>
+            <input type="checkbox" id="tea" name="tea" checked />
+            <label for="tea">Tea</label>
+          </div>
+          <div>
+            <input type="checkbox" id="water" name="water" />
+            <label for="water">Water</label>
+          </div>
+          <div>
+            <input type="checkbox" id="soda" name="soda" />
+            <label for="soda">Soda</label>
+          </div>
+          <div>
+            <input type="checkbox" id="coffee" name="coffee" />
+            <label for="coffee">Coffee</label>
+          </div>
+        </fieldset>
+        <!-- radio buttons -->
+        <fieldset>
+          <legend>Favorite movie snack</legend>
+
+          <input type="radio" id="popcorn" name="popcorn" />
+          <label for="popcorn">Popcorn</label>
+
+          <input type="radio" id="candy" name="candy" />
+          <label for="candy">Candy</label>
+
+          <input type="radio" id="nachos" name="nachos" />
+          <label for="nachos">Nachos</label>
+
+          <input type="radio" id="slurpee" name="slurpee" />
+          <label for="slurpee">Slurpee</label>
+        </fieldset>
+        <!-- button to change color-->
+        <button type="button" id="my-button">Click me!</button>
+      </form>
+    </main>
+    <script defer src="java.js"></script>
+  </body>
+</html>
