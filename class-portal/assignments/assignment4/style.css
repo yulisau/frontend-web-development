@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  color: white;
+  background-image: url("ds-back.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  max-width: 500px;
+ 
+}
+h1, h2{
+    margin-left: 10px;
+}
+h2 {
+  margin-bottom: 50px;
+}
+
+p {
+  margin-left: 10px;
+  font-size: 18px;
+  
+}
