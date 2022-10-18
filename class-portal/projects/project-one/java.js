@@ -10,7 +10,6 @@ const newEventModal = document.getElementById('newEventModal');
 const deleteEventModal = document.getElementById('deleteEventModal');
 const backDrop = document.getElementById('modalBackDrop'); 
 const eventTitleInput = document.getElementById('eventTitleInput');
-// const eventTitleInputTwo = document.getElementById('eventTitleInputTwo');
 const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']; 
 
 
@@ -22,7 +21,6 @@ function openModal(date){
 
     if(eventForDay){
         document.getElementById('eventText').innerText = eventForDay.title;
-        // document.getElementById('eventTextTwo').innerText = eventForDay.title;
 
         deleteEventModal.style.display = 'block'; 
         
@@ -79,10 +77,6 @@ function load(){
             eventDiv.classList.add('event');
             eventDiv.innerText = eventForDay.title; 
             daySquare.appendChild(eventDiv); 
-            // const eventDivTwo = document.createElement('div');
-            // eventDivTwo.classList.add('event');
-            // eventDivTwo.innerText = eventForDay.title; 
-            // daySquare.appendChild(eventDivTwo); 
            }
 
             daySquare.addEventListener('click', () => openModal(dayString)); 
@@ -98,31 +92,28 @@ function load(){
 
 function closeModal(){
     eventTitleInput.classList.remove('error');
-    // eventTitleInputTwo.classList.remove('error');
     newEventModal.style.display = 'none'; 
     deleteEventModal.style.display = 'none';
     backDrop.style.display= 'none'; 
-    eventTitleInput.value = ' ';
-    // eventTitleInputTwo.value= ' '; 
+    eventTitleInput.value = ' '; 
     clicked = null; 
     load(); 
    
 }
 function saveEvent(){
-     if (eventTitleInput.value){ //&& eventTitleInputTwo.value
-        // eventTitleInputTwo.classList.remove('error');
+     if (eventTitleInput.value){ 
         eventTitleInput.classList.remove('error');
 
         events.push({
             date: clicked, 
             title: eventTitleInput.value,
-            // title: eventTitleInputTwo.value, 
+             
         });
         localStorage.setItem('event', JSON.stringify(events));
         closeModal(); 
     }else{
         eventTitleInput.classList.add('error'); 
-        // eventTitleInputTwo.classList.add('error');
+        
     }
 }
 
