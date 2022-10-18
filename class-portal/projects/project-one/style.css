@@ -23,11 +23,17 @@ body {
     border-radius: 5px;
     color: black;
   }
+
+  h1{
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+
+  }
   
   #header {
     padding: 10px;
     color: black;
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'Rubik', sans-serif;
     display: flex;
     justify-content: space-between;
@@ -79,9 +85,9 @@ body {
   .event {
     font-size: 15px;
     padding: 10px 10px;
-    margin-bottom: 30px;
     background-color: brown;
     color: white;
+    margin-bottom: 300px;
     border-radius: 5px;
     max-height: 100px;
     max-width: 75px;
