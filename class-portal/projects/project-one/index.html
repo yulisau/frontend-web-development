@@ -1,0 +1,56 @@
+// Base javascript code from Youtube tutorial : https://www.youtube.com/watch?v=m9OSBJaQTlM&list=RDCMUCjGQyJCSU_VVMTu5nigonqg&start_radio=1&t=168s
+// Changes by Yuliza Saucedo with references to https://www.w3schools.com/ 
+</html><!DOCTYPE html>
+<!-- 
+
+-->
+<html lang="en">
+<head>
+    <title>Weekly Planner</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header">
+        <div id="week-display"></div>
+
+      </div>
+    <div id="days">
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+        <div>Sunday</div>
+    </div>
+    <div id="week"></div>
+
+  </div>
+  <div id="newEventModal">
+    <h2>New Event</h2>
+
+    <input id = "eventTitleInput" type="text" placeholder="Event Title">
+    <input id = "eventTitleInputTwo" placeholder="Second Event" type="text" >
+
+    <button id="saveButton">Save</button>
+    <button id="cancelButton">Cancel</button>
+
+  </div>
+  <div id="deleteEventModal">
+<h2>Event</h2>
+<p id="eventText"></p>
+<p id="eventTextTwo"></p>
+<button id="deleteButton">Delete</button>
+<button id="closeButton">Close</button>
+    </div>
+
+  <div id="modalBackDrop"></div>
+
+    <script src="java.js"></script>
+  </body>
+</html>

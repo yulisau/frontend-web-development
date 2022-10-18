@@ -1,0 +1,139 @@
+/* Base css code from Youtube tutorial : https://www.youtube.com/watch?v=m9OSBJaQTlM&list=RDCMUCjGQyJCSU_VVMTu5nigonqg&start_radio=1&t=168s
+Changes by Yuliza Saucedo  with references to https://www.w3schools.com/*/
+
+/* font-family: 'Quicksand', sans-serif;
+font-family: 'Rubik', sans-serif; */
+/* font input */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Rubik:wght@500&display=swap');
+
+body {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: rgb(223, 189, 251);
+  }
+  button {
+    width: 75px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  #header {
+    padding: 10px;
+    color: black;
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+  }
+  #container {
+    width: 870px;
+  }
+  #days {
+    /* width: 100%; */
+    display: flex;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    
+  }
+  #days div {
+    width: 100%;
+    padding: 0 10px;
+     
+    
+  }
+  #week {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    
+    
+  }
+  .day {
+    width: 100vw;
+    padding: 10px;
+    height: 50vh;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 5px;
+    border: 1px solid rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  .day:hover {
+    background-color: #e8faed;
+  }
+  .event {
+    font-size: 15px;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    max-height: 100px;
+    max-width: 75px;
+    overflow: hidden;
+  }
+  .padding {
+    cursor: default !important;
+    background-color: #FFFCFF !important;
+    box-shadow: none !important;
+  }
+  #newEventModal, #deleteEventModal {
+    display: none;
+    z-index: 20;
+    padding: 25px;
+    background-color: #ecfcb7;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    width: 350px;
+    top: 100px;
+    left: calc(50% - 175px);
+    position: absolute;
+    font-family: sans-serif;
+  }
+  #eventTitleInput , #eventTitleInputTwo {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+  }
+  #eventTitleInput.error {
+    border: 2px solid red;
+  }
+  #cancelButton, #deleteButton {
+    background-color: #d36c6c;
+  }
+  #saveButton, #closeButton {
+    background-color: #9eece2;
+  }
+  #eventText {
+    font-size: 14px;
+  }
+  #modalBackDrop {
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+  }
