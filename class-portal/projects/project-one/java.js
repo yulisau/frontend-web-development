@@ -1,5 +1,6 @@
 // Base javascript code from Youtube tutorial : https://www.youtube.com/watch?v=m9OSBJaQTlM&list=RDCMUCjGQyJCSU_VVMTu5nigonqg&start_radio=1&t=168s
 // Changes by Yuliza Saucedo with references to https://www.w3schools.com/
+
 let nav = 0; //keeping track of week 
 let clicked = null; 
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : []; //events in local storage
