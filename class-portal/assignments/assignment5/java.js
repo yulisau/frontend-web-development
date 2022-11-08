@@ -1,5 +1,5 @@
 // different animation 'easings': https://easings.net
-
+import anime from 'animejs/lib/anime.es.js';
 // changes original shape's radius
 anime({
   targets: "#bottoml", //secondl on grid
