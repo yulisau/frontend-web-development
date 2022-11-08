@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/*grid*/
+.shapes-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "first firstr"
+    "secondl second";
+  place-items: center;
+  padding: 60px;
+}
+
+/* all grid shapes */
+.shapes {
+  margin: 80px;
+  height: 200px;
+  width: 200px;
+  background-color: bisque;
+  color: black;
+}
+
+/* grid items */
+#bottom {
+  grid-area: second;
+}
+
+#top {
+  grid-area: first;
+}
+
+#topr {
+  grid-area: firstr;
+}
+
+#bottoml {
+  grid-area: secondl;
+}

@@ -63,7 +63,7 @@ function load(){
         const dayString = `${month + 1}/${(day - (paddingDays + 1)) + i}/${year}`; 
 
         if(i >= paddingDays){
-           daySquare.innerText = ((day - (paddingDays + 1)) + i); //display this week, same month
+           daySquare.innerText = (i + day); //display this week, same month
 
            const eventForDay = events.find(e => e.date === dayString);
 
@@ -81,7 +81,7 @@ function load(){
 
             daySquare.addEventListener('click', () => openModal(dayString)); 
         }else{
-            daySquare.innerText = (daysInMonth + i) - paddingDays; //display this week, two diff months 
+            daySquare.innerText = (daysInMonth - days) ; //display this week, two diff months 
             // daySquare.classList.add('padding');
         }
         fullweek.appendChild(daySquare); 
